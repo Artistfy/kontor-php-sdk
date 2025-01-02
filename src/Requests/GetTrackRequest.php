@@ -18,7 +18,7 @@ class GetTrackRequest extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/tracks/' . $this->trackId;
+        return '/tracks/'.$this->trackId;
     }
 
     public function defaultQuery(): array

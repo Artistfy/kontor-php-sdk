@@ -45,7 +45,7 @@ enum Price: string
             399, 499, 599 => self::EP,
             699, 799, 899, 999, 1099, 1199 => self::LOW,
             1299, 1399, 1499, 1599 => self::DOUBLE,
-            default => throw new Exception('No price found for ' . $price),
+            default => throw new Exception('No price found for '.$price),
         };
     }
 
@@ -59,7 +59,7 @@ enum Price: string
             self::EP => 599,
             self::LOW => 1199,
             self::DOUBLE => 1599,
-            default => throw new Exception('No convertable case found for ' . $case),
+            default => throw new Exception('No convertable case found for '.$case),
         };
     }
 

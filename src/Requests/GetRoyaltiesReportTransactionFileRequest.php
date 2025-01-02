@@ -15,6 +15,6 @@ class GetRoyaltiesReportTransactionFileRequest extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/royalties/reports/' . $this->reportId . '/transactions.zip';
+        return '/royalties/reports/'.$this->reportId.'/transactions.zip';
     }
 }

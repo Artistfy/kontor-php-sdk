@@ -18,7 +18,7 @@ class GetAlbumRequest extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/albums/' . $this->albumId;
+        return '/albums/'.$this->albumId;
     }
 
     public function defaultQuery(): array

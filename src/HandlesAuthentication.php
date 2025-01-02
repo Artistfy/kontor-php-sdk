@@ -22,7 +22,7 @@ trait HandlesAuthentication
 
     protected function defaultAuth(): ?Authenticator
     {
-        if (!$this->autoAuthenticate) {
+        if (! $this->autoAuthenticate) {
             return null;
         }
 

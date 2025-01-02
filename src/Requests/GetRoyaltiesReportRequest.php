@@ -39,7 +39,7 @@ class GetRoyaltiesReportRequest extends Request
     public function createDtoFromResponse(Response $response): array
     {
         return array_map(
-            fn(array $data) => Report::fromArray($data),
+            fn (array $data) => Report::fromArray($data),
             $response->json('reports') ?? []
         );
     }

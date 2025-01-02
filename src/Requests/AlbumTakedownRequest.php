@@ -15,6 +15,6 @@ class AlbumTakedownRequest extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/albums/' . $this->albumId . '/takedown';
+        return '/albums/'.$this->albumId.'/takedown';
     }
 }

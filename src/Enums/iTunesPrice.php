@@ -43,7 +43,7 @@ enum iTunesPrice: string
             1399 => self::DELUXE_TWO,
             1499 => self::DELUXE_THREE,
             1599 => self::DELUXE_FOUR,
-            default => throw new Exception('No price found for ' . $price),
+            default => throw new Exception('No price found for '.$price),
         };
     }
 
@@ -74,7 +74,7 @@ enum iTunesPrice: string
     public static function fromName(string $name): self
     {
         return collect(self::cases())
-            ->first(fn(self $enum) => str_contains($name, $enum->value))
+            ->first(fn (self $enum) => str_contains($name, $enum->value))
             ?? throw new Exception("Unknown iTunes price [{$name}]");
     }
 }

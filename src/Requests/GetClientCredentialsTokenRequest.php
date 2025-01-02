@@ -3,18 +3,18 @@
 namespace Artistfy\Kontor\Requests;
 
 use Saloon\Contracts\Authenticator;
+use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Helpers\OAuth2\OAuthConfig;
+use Saloon\Http\Auth\NullAuthenticator;
 use Saloon\Http\Request;
 use Saloon\Traits\Body\HasFormBody;
 use Saloon\Traits\Plugins\AcceptsJson;
-use Saloon\Contracts\Body\HasBody;
-use Saloon\Http\Auth\NullAuthenticator;
 
 class GetClientCredentialsTokenRequest extends Request implements HasBody
 {
-    use HasFormBody;
     use AcceptsJson;
+    use HasFormBody;
 
     /**
      * Define the method that the request will use.
@@ -44,6 +44,6 @@ class GetClientCredentialsTokenRequest extends Request implements HasBody
      */
     protected function defaultAuth(): ?Authenticator
     {
-        return new NullAuthenticator();
+        return new NullAuthenticator;
     }
 }

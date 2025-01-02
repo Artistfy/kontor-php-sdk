@@ -13,8 +13,6 @@ class SearchAlbumRequest extends Request
 
     /**
      * Determines if the request expects a single album to be returned.
-     *
-     * @var boolean
      */
     private bool $expectsSole = false;
 
@@ -32,8 +30,6 @@ class SearchAlbumRequest extends Request
 
     /**
      * If true, the request will expect a single album to be returned.
-     *
-     * @return self
      */
     public function sole(bool $expectsSole = true): self
     {
@@ -65,7 +61,7 @@ class SearchAlbumRequest extends Request
     public function createDtoFromResponse(Response $response): array|Album
     {
         if ($this->expectsSole && $response->json('total') !== 1) {
-            throw new \Exception('Expected 1 album, got ' . $response->json('total'));
+            throw new \Exception('Expected 1 album, got '.$response->json('total'));
         }
 
         if ($this->expectsSole) {
