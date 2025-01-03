@@ -16,4 +16,9 @@ class Helper
         return DateTimeImmutable::createFromFormat('Y-m-d', $date)
             ?: throw new \InvalidArgumentException('Invalid date format');
     }
+
+    public static function mapIfNotNull(mixed $value, callable $callback): mixed
+    {
+        return $value ? $callback($value) : null;
+    }
 }
