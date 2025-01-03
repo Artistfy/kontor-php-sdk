@@ -2,6 +2,10 @@
 
 All notable changes to `kontor-php-sdk` will be documented in this file.
 
+## v1.0.3 - 2025-01-03
+
+**Full Changelog**: https://github.com/Artistfy/kontor-php-sdk/compare/v1.0.2...v1.0.3
+
 ## v1.0.2 - 2025-01-03
 
 - fix sole search album
