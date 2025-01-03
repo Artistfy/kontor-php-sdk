@@ -60,7 +60,7 @@ class Album
             Arr::get($data, 'cover.url'),
             Arr::get($data, 'tracks.disc_count'),
             collect(Arr::get($data, 'tracks.items'))
-                ->map(fn(array $track) => Track::fromArray($track)),
+                ->map(fn (array $track) => Track::fromArray($track)),
         );
     }
 
