@@ -20,7 +20,7 @@ class Album
         public ?string $ean,
         public ?string $upc,
         public string $title,
-        public string $version,
+        public ?string $version,
         public string $artistName,
         public array $contributors,
         public ?DateTimeInterface $preorderStart,
@@ -60,7 +60,7 @@ class Album
             Arr::get($data, 'cover.url'),
             Arr::get($data, 'tracks.disc_count'),
             collect(Arr::get($data, 'tracks.items'))
-                ->map(fn (array $track) => Track::fromArray($track)),
+                ->map(fn(array $track) => Track::fromArray($track)),
         );
     }
 
