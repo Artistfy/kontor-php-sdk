@@ -1,51 +1,50 @@
 {
-    "name": "artistfy/kontor-php-sdk",
-    "description": "PHP SDK for kontor's API",
-    "keywords": [
-        "Artistfy",
-        "kontor-php-sdk"
-    ],
-    "homepage": "https://github.com/artistfy/kontor-php-sdk",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Krishan Koenig",
-            "email": "krishan.koenig@googlemail.com",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "php": "^8.4",
-        "illuminate/collections": "^11.36",
-        "saloonphp/saloon": "^3.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^10.3.2",
-        "laravel/pint": "^1.0",
-        "spatie/ray": "^1.28"
-    },
-    "autoload": {
-        "psr-4": {
-            "Artistfy\\Kontor\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Artistfy\\Kontor\\Tests\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit",
-            "test-coverage": "vendor/bin/phpunit --coverage",
-        "format": "vendor/bin/pint"
-    },
-    "config": {
-        "sort-packages": true,
-        "allow-plugins": {
-            
-            "phpstan/extension-installer": true
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+  "name": "artistfy/kontor-php-sdk",
+  "description": "PHP SDK for kontor's API",
+  "keywords": [
+    "Artistfy",
+    "kontor-php-sdk"
+  ],
+  "homepage": "https://github.com/artistfy/kontor-php-sdk",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Krishan Koenig",
+      "email": "krishan.koenig@googlemail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.3",
+    "illuminate/collections": "^11.36",
+    "saloonphp/saloon": "^3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.3.2",
+    "laravel/pint": "^1.0",
+    "spatie/ray": "^1.28"
+  },
+  "autoload": {
+    "psr-4": {
+      "Artistfy\\Kontor\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Artistfy\\Kontor\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage",
+    "format": "vendor/bin/pint"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "phpstan/extension-installer": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
