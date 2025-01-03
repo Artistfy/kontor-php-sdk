@@ -61,7 +61,7 @@ class SearchAlbumRequest extends Request
     public function createDtoFromResponse(Response $response): array|Album
     {
         if ($this->expectsSole && $response->json('total') !== 1) {
-            throw new \Exception('Expected 1 album, got ' . $response->json('total'));
+            throw new \Exception('Expected 1 album, got '.$response->json('total'));
         }
 
         if ($this->expectsSole) {
