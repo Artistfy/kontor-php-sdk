@@ -16,7 +16,7 @@
   ],
   "require": {
     "php": "^8.3",
-    "illuminate/collections": "^11.36",
+    "illuminate/collections": "^12.3",
     "saloonphp/saloon": "^3.0"
   },
   "require-dev": {
