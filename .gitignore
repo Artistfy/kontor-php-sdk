@@ -23,11 +23,3 @@ yarn-error.log
 .php_cs
 .php_cs.cache
 .php-cs-fixer.cache
-
-# Misc
-phpunit.xml
-phpstan.neon
-psalm.xml
-testbench.yaml
-/docs
-/coverage

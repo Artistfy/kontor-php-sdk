@@ -16,12 +16,13 @@
   ],
   "require": {
     "php": "^8.3",
-    "illuminate/collections": "^11.36",
+    "illuminate/collections": "^11.36|^12.0",
     "saloonphp/saloon": "^3.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "^10.3.2",
     "laravel/pint": "^1.0",
+    "phpstan/phpstan": "^2.1",
+    "phpunit/phpunit": "^10.3.2|^11.0",
     "spatie/ray": "^1.28"
   },
   "autoload": {
