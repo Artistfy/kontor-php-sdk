@@ -2,6 +2,20 @@
 
 All notable changes to `kontor-php-sdk` will be documented in this file.
 
+## v2.0.0 - 2025-11-17
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.2.0 to 2.3.0 by @dependabot[bot] in https://github.com/Artistfy/kontor-php-sdk/pull/3
+* Bump aglipanci/laravel-pint-action from 2.4 to 2.5 by @dependabot[bot] in https://github.com/Artistfy/kontor-php-sdk/pull/4
+* support Laravel v12
+
+### New Contributors
+
+* @dependabot[bot] made their first contribution in https://github.com/Artistfy/kontor-php-sdk/pull/3
+
+**Full Changelog**: https://github.com/Artistfy/kontor-php-sdk/compare/v1.0.5...v2.0.0
+
 ## v1.0.5 - 2025-01-03
 
 **Full Changelog**: https://github.com/Artistfy/kontor-php-sdk/compare/v1.0.4...v1.0.5
